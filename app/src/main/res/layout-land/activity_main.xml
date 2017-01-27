@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.dtcc.matt.portraitandlandscape.MainActivity">
+
+    <TextView
+        android:text="Area:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textAreaPrompt"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textRadius"
+        android:layout_alignBottom="@+id/textRadius"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculateBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textAreaPrompt"
+        android:layout_alignEnd="@+id/textAreaPrompt"
+        android:layout_marginBottom="31dp" />
+
+    <TextView
+        android:text="Diameter:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCirumferencePrompt"
+        android:textSize="25sp"
+        android:layout_alignBaseline="@+id/textAreaPrompt"
+        android:layout_alignBottom="@+id/textAreaPrompt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textArea"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textAreaPrompt"
+        android:layout_toStartOf="@+id/textAreaPrompt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCircumference"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_toLeftOf="@+id/textCirumferencePrompt"
+        android:layout_toStartOf="@+id/textCirumferencePrompt"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <TextView
+        android:text="Radius:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRadius"
+        android:textSize="30sp"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignBaseline="@+id/textArea"
+        android:layout_alignBottom="@+id/textArea"
+        android:layout_alignLeft="@+id/textRadius"
+        android:layout_alignStart="@+id/textRadius"
+        android:layout_alignRight="@+id/textRadius"
+        android:layout_alignEnd="@+id/textRadius" />
+</RelativeLayout>
