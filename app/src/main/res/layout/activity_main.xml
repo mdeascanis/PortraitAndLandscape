@@ -18,16 +18,17 @@
         android:layout_toLeftOf="@+id/editText2"
         android:layout_toStartOf="@+id/editText2"
         android:layout_marginTop="37dp"
-        android:id="@+id/textCirumferencePrompt"
+        android:id="@+id/textDiameterPrompt"
         android:textSize="25sp"  />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textAreaPrompt"
-        android:layout_alignRight="@+id/textCircumference"
-        android:layout_alignEnd="@+id/textCircumference"
-        android:id="@+id/textArea" />
+        android:layout_alignRight="@+id/textDiameter"
+        android:layout_alignEnd="@+id/textDiameter"
+        android:id="@+id/textArea"
+        android:textSize="30sp" />
 
     <TextView
         android:text="Area:"
@@ -35,9 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="83dp"
         android:id="@+id/textAreaPrompt"
-        android:layout_below="@+id/textCirumferencePrompt"
-        android:layout_alignLeft="@+id/textCirumferencePrompt"
-        android:layout_alignStart="@+id/textCirumferencePrompt"
+        android:layout_below="@+id/textDiameterPrompt"
+        android:layout_alignLeft="@+id/textDiameterPrompt"
+        android:layout_alignStart="@+id/textDiameterPrompt"
         android:textSize="30sp" />
 
     <TextView
@@ -47,8 +48,8 @@
         android:id="@+id/textRadius"
         android:layout_alignBaseline="@+id/editText2"
         android:layout_alignBottom="@+id/editText2"
-        android:layout_alignLeft="@+id/textCirumferencePrompt"
-        android:layout_alignStart="@+id/textCirumferencePrompt"
+        android:layout_alignLeft="@+id/textDiameterPrompt"
+        android:layout_alignStart="@+id/textDiameterPrompt"
         android:textSize="30sp" />
 
     <Button
@@ -77,9 +78,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textCircumference"
-        android:layout_alignBaseline="@+id/textCirumferencePrompt"
-        android:layout_alignBottom="@+id/textCirumferencePrompt"
+        android:id="@+id/textDiameter"
+        android:layout_alignBaseline="@+id/textDiameterPrompt"
+        android:layout_alignBottom="@+id/textDiameterPrompt"
         android:layout_alignRight="@+id/calculateBtn"
-        android:layout_alignEnd="@+id/calculateBtn" />
+        android:layout_alignEnd="@+id/calculateBtn"
+        android:textSize="30sp" />
 </RelativeLayout>
